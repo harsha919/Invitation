@@ -24,7 +24,7 @@ function App() {
         padding: "30px" 
       }}>
 
-      <Box sx={{ maxWidth: "600px", margin: "auto", paddingTop: "3rem" }}>
+      <Box sx={{ maxWidth: "600px", margin: "auto", paddingTop: "4rem" }}>
         <Contents />
       </Box>
       <Box
