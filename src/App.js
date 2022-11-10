@@ -7,10 +7,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Contents from './Contents';
 // assets
 import flora from "./assets/flora.png";
-// import borderPng from "./assets/border.png"
 
 function App() {
   const isMobile = useMediaQuery("(max-width:600px)");
+  const smallHeight = useMediaQuery("(max-height:510px)");
 
   return (
     <div style={{ position: "relative" }}>
@@ -28,11 +28,11 @@ function App() {
         elevation={10}
         sx={{
           maxWidth: "900px",
-          maxHeight: "900px",
+          maxHeight: "700px",
           margin: isMobile ? "50px 20px" : "auto",
           position: 'relative',
           mt: isMobile ? "20px" : "50px",
-          height: 'calc(100vh - 100px)',
+          height: smallHeight ? null : 'calc(100vh - 100px)',
           padding: "30px",
           zIndex: "1300",
         }}>
