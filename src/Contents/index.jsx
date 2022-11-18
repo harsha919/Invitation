@@ -58,7 +58,7 @@ const Contents = () => (
       </Stack>
       <Container1><Typography variant="h5">At 2 PM</Typography></Container1>
     </Stack>
-    <Container2 sx={{ display: "flex" }}>
+    <Container2 sx={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}>
       <Link href="https://goo.gl/maps/HCiMnmsKsJrjDBSbA" rel="location noreferrer" target="_blank">
         <IconButton aria-label="delete" size="small" color="primary">
           <PlaceIcon fontSize="inherit" />
