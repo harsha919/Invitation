@@ -35,21 +35,11 @@ function App() {
           height: smallHeight ? null : 'calc(100vh - 100px)',
           padding: "30px",
           zIndex: "1300",
+          backgroundImage: `url(${flora})`
         }}>
 
         <Box sx={{ maxWidth: "600px", margin: "auto", paddingTop: "4rem" }}>
           <Contents />
-        </Box>
-        <Box
-          sx={{
-            position: 'absolute',
-            left: '0px',
-            top: '0px',
-            width: '100%',
-            height: '100%',
-            backgroundImage: `url(${flora})`
-          }}
-        >
         </Box>
       </Paper>
     </div>
