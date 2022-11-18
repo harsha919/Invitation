@@ -18,7 +18,13 @@ const Container2 = styled("div")({
   "& > h5": { fontFamily: "'Caveat', cursive", textAlign: "center" }
 });
 
-console.log(window.location.pathname);
+const person = window.location.href.split("/").pop();
+
+const vals = (() => {
+  if(person === "bindu")
+    return ["Hima Bindu", "&", "Chandu"];
+  return ["Chandu", "&", "Hima Bindu"];
+})();
 
 const Contents = () => (
   <Stack spacing={2} alignItems="center">
@@ -33,21 +39,21 @@ const Contents = () => (
         fontFamily: "'Dancing Script', cursive",
         textAlign: "center",
       }}
-    >Chandu</Typography>
+    >{vals[0]}</Typography>
     <Typography
       variant="h3"
       sx={{
         fontFamily: "'Dancing Script', cursive",
         textAlign: "center",
       }}
-    >&</Typography>
+    >{vals[1]}</Typography>
     <Typography
       variant="h3"
       sx={{
         fontFamily: "'Dancing Script', cursive",
         textAlign: "center",
       }}
-    >Hima Bindu</Typography>
+    >{vals[2]}</Typography>
     <Stack direction="row" spacing={2} alignItems="center">
       <Container1> <Typography variant="h5">Saturday</Typography></Container1>
       <Stack alignItems="center" sx={{
