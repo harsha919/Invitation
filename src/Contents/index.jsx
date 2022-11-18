@@ -18,6 +18,8 @@ const Container2 = styled("div")({
   "& > h5": { fontFamily: "'Caveat', cursive", textAlign: "center" }
 });
 
+console.log(window.location.pathname);
+
 const Contents = () => (
   <Stack spacing={2} alignItems="center">
     <Container2>
@@ -31,7 +33,7 @@ const Contents = () => (
         fontFamily: "'Dancing Script', cursive",
         textAlign: "center",
       }}
-    >Bindu</Typography>
+    >Chandu</Typography>
     <Typography
       variant="h3"
       sx={{
@@ -45,7 +47,7 @@ const Contents = () => (
         fontFamily: "'Dancing Script', cursive",
         textAlign: "center",
       }}
-    >Chandu</Typography>
+    >Hima Bindu</Typography>
     <Stack direction="row" spacing={2} alignItems="center">
       <Container1> <Typography variant="h5">Saturday</Typography></Container1>
       <Stack alignItems="center" sx={{
@@ -65,7 +67,7 @@ const Contents = () => (
           target="_blank">
           <PlaceIcon />
         </Link>
-        PR&SR theatre Road, Vetapalem
+        Near PR&SR theatre, Vetapalem
       </Typography>
     </Container2>
   </Stack>
