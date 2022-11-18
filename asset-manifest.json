@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Invitation/static/css/main.6ec8f1fb.css",
-    "main.js": "/Invitation/static/js/main.e3015d1d.js",
-    "static/js/787.d0f4f082.chunk.js": "/Invitation/static/js/787.d0f4f082.chunk.js",
-    "static/media/flora.png": "/Invitation/static/media/flora.a7f8ac797fb592d80887.png",
-    "index.html": "/Invitation/index.html",
-    "main.6ec8f1fb.css.map": "/Invitation/static/css/main.6ec8f1fb.css.map",
-    "main.e3015d1d.js.map": "/Invitation/static/js/main.e3015d1d.js.map",
-    "787.d0f4f082.chunk.js.map": "/Invitation/static/js/787.d0f4f082.chunk.js.map"
+    "main.css": "/Invitation/:name/static/css/main.6ec8f1fb.css",
+    "main.js": "/Invitation/:name/static/js/main.ee4e2608.js",
+    "static/js/787.d0f4f082.chunk.js": "/Invitation/:name/static/js/787.d0f4f082.chunk.js",
+    "static/media/flora.png": "/Invitation/:name/static/media/flora.a7f8ac797fb592d80887.png",
+    "index.html": "/Invitation/:name/index.html",
+    "main.6ec8f1fb.css.map": "/Invitation/:name/static/css/main.6ec8f1fb.css.map",
+    "main.ee4e2608.js.map": "/Invitation/:name/static/js/main.ee4e2608.js.map",
+    "787.d0f4f082.chunk.js.map": "/Invitation/:name/static/js/787.d0f4f082.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ec8f1fb.css",
-    "static/js/main.e3015d1d.js"
+    "static/js/main.ee4e2608.js"
   ]
 }
