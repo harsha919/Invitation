@@ -58,13 +58,13 @@ const Contents = () => (
       </Stack>
       <Container1><Typography variant="h5">At 2 PM</Typography></Container1>
     </Stack>
-    <Container2 sx={{ display: "flex", alignItems: "center", justifyContent: "space-around" }}>
+    <Container2>
       <Link href="https://goo.gl/maps/HCiMnmsKsJrjDBSbA" rel="location noreferrer" target="_blank">
-        <IconButton aria-label="delete" size="small" color="primary">
-          <PlaceIcon fontSize="inherit" />
+        <IconButton aria-label="delete" size="large" color="primary" sx={{ transform: "translateY(-.3rem)" }}>
+          <PlaceIcon/>
         </IconButton>
       </Link>
-      <Typography variant="h5">PR&SR theatre Road, Vetapalem</Typography>
+      <Typography variant="h5" sx={{ display: "inline" }}>PR&SR theatre Road, Vetapalem</Typography>
     </Container2>
   </Stack>
 )
