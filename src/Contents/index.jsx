@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import PlaceIcon from '@mui/icons-material/Place';
 import Link from '@mui/material/Link';
-import IconButton from "@mui/material/IconButton";
 
 const Container1 = styled("div")({
   borderTop: "2px solid #FE036A",
@@ -23,7 +22,7 @@ const Contents = () => (
   <Stack spacing={2} alignItems="center">
     <Container2>
       <Typography variant="h5">
-        Together with their families you are invited to wedding of
+        Together with your families you are invited to wedding of
       </Typography>
     </Container2>
     <Typography
@@ -59,12 +58,15 @@ const Contents = () => (
       <Container1><Typography variant="h5">At 2 PM</Typography></Container1>
     </Stack>
     <Container2>
-      <Link href="https://goo.gl/maps/HCiMnmsKsJrjDBSbA" rel="location noreferrer" target="_blank">
-        <IconButton aria-label="delete" size="large" color="primary" sx={{ transform: "translateY(-.3rem)" }}>
-          <PlaceIcon/>
-        </IconButton>
-      </Link>
-      <Typography variant="h5" sx={{ display: "inline" }}>PR&SR theatre Road, Vetapalem</Typography>
+      <Typography variant="h5">
+        <Link
+          href="https://goo.gl/maps/HCiMnmsKsJrjDBSbA"
+          rel="location noreferrer"
+          target="_blank">
+          <PlaceIcon />
+        </Link>
+        PR&SR theatre Road, Vetapalem
+      </Typography>
     </Container2>
   </Stack>
 )
