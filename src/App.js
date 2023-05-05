@@ -1,48 +1,137 @@
-import './App.css';
+import "./App.css";
 // mui
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Button from "@mui/material/Button";
+import Location from "@mui/icons-material/LocationOnRounded";
+import Link from "@mui/material/Link";
 // componets
-import Contents from './Contents';
+import { Typography } from "@mui/material";
 // assets
-import flora from "./assets/flora.png";
+import background from "./assets/background.png";
+import headerImg from "./assets/theme-7.png";
+import bride from "./assets/bride.jpg";
+import groom from "./assets/groom.jpg";
 
 function App() {
   const isMobile = useMediaQuery("(max-width:600px)");
-  const smallHeight = useMediaQuery("(max-height:510px)");
 
   return (
-    <div style={{ position: "relative" }}>
-      <Box
-        height="100px"
-        width="100%"
-        sx={{
-          position: "fixed",
-          top: "0px",
-          left: "0px",
-          backgroundColor: "#FE036A"
-        }}
-        />
-      <Paper
-        elevation={10}
-        sx={{
-          maxWidth: "900px",
-          maxHeight: "700px",
-          margin: isMobile ? "50px 20px" : "auto",
-          position: 'relative',
-          mt: isMobile ? "20px" : "50px",
-          height: smallHeight ? null : 'calc(100vh - 100px)',
-          padding: "30px",
-          zIndex: "1300",
-          backgroundImage: `url(${flora})`
-        }}>
-
-        <Box sx={{ maxWidth: "600px", margin: "auto", paddingTop: "4rem" }}>
-          <Contents />
+    <Box
+      sx={{
+        backgroundImage: `url(${background})`,
+        minHeight: "100vh",
+        minWidth: "100vw",
+        width: "100%",
+        height: "100%",
+        paddingBottom: "5rem",
+      }}
+    >
+      <Stack spacing={5} alignItems="center">
+        <Box component={"img"} src={headerImg} width="40rem" />
+        <Box>
+          <Typography variant="h5" fontWeight="bold">
+            ఈర్ల వారి పెళ్లి పిలుపు
+          </Typography>
         </Box>
-      </Paper>
-    </div>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-evenly",
+            alignItems: "center",
+          }}
+          width="90%"
+          maxWidth="900px"
+        >
+          <Stack spacing={1} alignItems="center">
+            <Box
+              component={"img"}
+              src={groom}
+              width={isMobile ? "7rem" : "12rem"}
+              borderRadius="50%"
+            />
+            <Typography variant="caption" fontWeight="bold">
+              వరుడు . చి || తేజేష్
+            </Typography>
+          </Stack>
+          <Stack spacing={1} alignItems="center">
+            <Box
+              component={"img"}
+              src={bride}
+              width={isMobile ? "7rem" : "12rem"}
+              borderRadius="50%"
+            />
+            <Typography variant="caption" fontWeight="bold">
+              వధువు . చి || ల || సౌ || సంధ్య
+            </Typography>
+          </Stack>
+        </Box>
+        <Stack
+          spacing={1}
+          sx={{
+            width: "90%",
+            maxWidth: "900px",
+          }}
+        >
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            శుభ ముహూర్తం 12.05.2023 శుక్రవారం రాత్రి 02.43 ని.లకు
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            కల్యాణవేదిక - శ్రీ వరసిద్ధి వినాయక కల్యాణ మండపము , కోలవెన్ను వ్రతం
+            మరియు రిసెప్షన్ - 14 .05 .2023 ఆదివారం ఉదయం 09 .00 నుండి, విందు -
+            మధ్యాహ్నం 12 .00 నుండి
+          </Typography>
+
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            వ్రతం మరియు రిసెప్షన్ జరుగు మా గృహము నందు మార్గ నిర్దేశములు
+          </Typography>
+        </Stack>
+        <Stack
+          spacing={1}
+          sx={{
+            marginTop: "5rem !important",
+            width: "90%",
+            maxWidth: "900px",
+          }}
+        >
+          <Typography variant="subtitle1" textAlign="center">
+            బస్ స్టాండ్ నుండి .... నెంబర్ , బస్సు ఎక్కి కాటా దగ్గర దిగి కాటా
+            పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center">
+            రైల్వే స్టేషన్ నుండి .... నెంబర్ , బస్సు ఎక్కి కాటా దగ్గర దిగి కాటా
+            పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center">
+            లో వచ్చే వారు KANTA అని టైపు చేసి KANTA SRINIVAS NAGAR BANK COLONY -
+            SELECT చేయవలెను
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center">
+            సొంత వాహనంలో వచ్చేవారు క్రింద ఇచ్చిన లింక్ ను మప్స్ లో చూసుకొని
+            రావలెను
+          </Typography>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            sx={{ marginTop: "2rem !important" }}
+            onClick
+          >
+            <Link
+              href="https://goo.gl/maps/UimQcML4ZDLjfmMa9"
+              rel="location noreferrer"
+              target="_blank"
+            >
+              <Button variant="outlined" color="success">
+                <Location />
+                &nbsp; Location
+              </Button>
+            </Link>
+          </Box>
+        </Stack>
+      </Stack>
+    </Box>
   );
 }
 
