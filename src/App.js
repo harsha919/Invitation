@@ -29,7 +29,7 @@ function App() {
       }}
     >
       <Stack spacing={5} alignItems="center">
-        <Box component={"img"} src={headerImg} width="40rem" />
+        <Box component={"img"} src={headerImg} width={isMobile ? "100%" : "40rem"} />
         <Box>
           <Typography variant="h5" fontWeight="bold">
             ఈర్ల వారి పెళ్లి పిలుపు
