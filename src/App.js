@@ -29,10 +29,14 @@ function App() {
       }}
     >
       <Stack spacing={5} alignItems="center">
-        <Box component={"img"} src={headerImg} width={isMobile ? "100%" : "40rem"} />
+        <Box
+          component={"img"}
+          src={headerImg}
+          width={isMobile ? "100%" : "40rem"}
+        />
         <Box>
           <Typography variant="h5" fontWeight="bold">
-            ఈర్ల వారి పెళ్లి పిలుపు
+            ఈర్ల వారి పెండ్లి పిలుపు
           </Typography>
         </Box>
         <Box
@@ -51,9 +55,14 @@ function App() {
               width={isMobile ? "7rem" : "12rem"}
               borderRadius="50%"
             />
-            <Typography variant="caption" fontWeight="bold">
-              వరుడు . చి || తేజేష్
+            <Typography variant="body2" fontWeight="bold" textAlign="center">
+              వరుడు&nbsp;{isMobile ? null : "చి || తేజేష్"}
             </Typography>
+            {isMobile ? (
+              <Typography variant="body2" fontWeight="bold" textAlign="center">
+                చి || తేజేష్
+              </Typography>
+            ) : null}
           </Stack>
           <Stack spacing={1} alignItems="center">
             <Box
@@ -62,9 +71,14 @@ function App() {
               width={isMobile ? "7rem" : "12rem"}
               borderRadius="50%"
             />
-            <Typography variant="caption" fontWeight="bold">
-              వధువు . చి || ల || సౌ || సంధ్య
+            <Typography variant="body2" fontWeight="bold" textAlign="center">
+              వధువు&nbsp;{isMobile ? null : "చి || ల || సౌ || సంధ్య"}
             </Typography>
+            {isMobile ? (
+              <Typography variant="body2" fontWeight="bold" textAlign="center">
+                చి || ల || సౌ || సంధ్య
+              </Typography>
+            ) : null}
           </Stack>
         </Box>
         <Stack
@@ -75,41 +89,50 @@ function App() {
           }}
         >
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
-            శుభ ముహూర్తం 12.05.2023 శుక్రవారం రాత్రి 02.43 ని.లకు
+            శుభముహూర్తం 12.05.2023 శుక్రవారం రాత్రి 02.43 ని.లకు
           </Typography>
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
-            కల్యాణవేదిక - శ్రీ వరసిద్ధి వినాయక కల్యాణ మండపము , కోలవెన్ను వ్రతం
-            మరియు రిసెప్షన్ - 14 .05 .2023 ఆదివారం ఉదయం 09 .00 నుండి, విందు -
-            మధ్యాహ్నం 12 .00 నుండి
+            కళ్యాణవేదిక - శ్రీ వరసిద్ధి వినాయక కళ్యాణ మండపము , కోలవెన్ను
           </Typography>
-
+          {/* మరియు రిసెప్షన్ */}
+          <br></br>
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
-            వ్రతం మరియు రిసెప్షన్ జరుగు మా గృహము నందు మార్గ నిర్దేశములు
+            వ్రతం - 13 .05 .2023 ఆదివారం ఉదయం 09 .00 నుండి
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            విందు - మధ్యాహ్నం 12 .00 నుండి
+          </Typography>
+          <br></br>
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            కోలవెన్ను కు వెళ్లే బస్సు నంబరు - 211
           </Typography>
         </Stack>
         <Stack
           spacing={1}
           sx={{
-            marginTop: "5rem !important",
+            marginTop: "3rem !important",
             width: "90%",
             maxWidth: "900px",
           }}
         >
-          <Typography variant="subtitle1" textAlign="center">
-            బస్ స్టాండ్ నుండి .... నెంబర్ , బస్సు ఎక్కి కాటా దగ్గర దిగి కాటా
-            పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
+          <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
+            వ్రతం జరుగు మా గృహముకు మార్గ నిర్దేశములు
           </Typography>
           <Typography variant="subtitle1" textAlign="center">
-            రైల్వే స్టేషన్ నుండి .... నెంబర్ , బస్సు ఎక్కి కాటా దగ్గర దిగి కాటా
-            పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
+            <b>బస్ స్టాండ్ నుండి</b> - 31, 31H నెంబర్ బస్సు ఎక్కి కాటా దగ్గర
+            దిగి కాటా పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
           </Typography>
           <Typography variant="subtitle1" textAlign="center">
-            లో వచ్చే వారు KANTA అని టైపు చేసి KANTA SRINIVAS NAGAR BANK COLONY -
-            SELECT చేయవలెను
+            <b>రైల్వే స్టేషన్ నుండి</b> - 54, 5SG నెంబర్ బస్సు ఎక్కి కాటా దగ్గర
+            దిగి కాటా పక్కన రోడ్డులో 200 మీటర్లు నడవ వలెను
           </Typography>
           <Typography variant="subtitle1" textAlign="center">
-            సొంత వాహనంలో వచ్చేవారు క్రింద ఇచ్చిన లింక్ ను మప్స్ లో చూసుకొని
-            రావలెను
+            <b>OLA / UBER / RAPIDO</b> - లో వచ్చే వారు KANTA అని టైపు చేసి KANTA
+            SRINIVAS NAGAR BANK COLONY - SELECT చేయవలెను
+          </Typography>
+          <Typography variant="subtitle1" textAlign="center">
+            <b>సొంత వాహనంలో</b> వచ్చేవారు క్రింద ఇచ్చిన లింక్ ను మప్స్ లో
+            చూసుకొని రావలెను
           </Typography>
           <Box
             display="flex"
