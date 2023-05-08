@@ -92,12 +92,25 @@ function App() {
             శుభముహూర్తం 12.05.2023 శుక్రవారం రాత్రి 02.43 ని.లకు
           </Typography>
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
-            కళ్యాణవేదిక - శ్రీ వరసిద్ధి వినాయక కళ్యాణ మండపము , కోలవెన్ను
+            కళ్యాణవేదిక -  
+            <Link
+              href="https://goo.gl/maps/tsJeDN5k8AKMZh8N9"
+              rel="location noreferrer"
+              target="_blank"
+              sx={{ display: "inline-block" }}
+            >
+              {/* <Button variant="text" color="info">
+                <Icon sx={{ fontSize: "24px" }}>
+                  <Location />
+                </Icon>
+              </Button> */}
+              శ్రీ వరసిద్ధి వినాయక కళ్యాణ మండపము ,కోలవెన్ను
+            </Link>
           </Typography>
           {/* మరియు రిసెప్షన్ */}
           <br></br>
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
-            వ్రతం - 13 .05 .2023 ఆదివారం ఉదయం 09 .00 నుండి
+            వ్రతం - 13 .05 .2023 శనివారం ఉదయం 09 .00 నుండి
           </Typography>
           <Typography variant="subtitle1" textAlign="center" fontWeight="bold">
             విందు - మధ్యాహ్నం 12 .00 నుండి
